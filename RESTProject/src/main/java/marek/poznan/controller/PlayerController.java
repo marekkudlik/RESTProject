@@ -54,7 +54,7 @@ public class PlayerController {
 		serv.deletePlayer(playerId);
 		return "Delete Player: " + playerId;
 	}
-	@PutMapping("/players/{playerId}")
+	@PutMapping("/players")
 	public Player updatePlayer(@RequestBody Player player) {
 		serv.savePlayer(player);
 		
